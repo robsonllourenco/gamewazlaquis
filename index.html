@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game WazlaQUIZ</title>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+    
+    <section id="joystick">
+        <div class="left">
+            <div class="botoes">
+                <div class="botaoMaior">
+
+                </div>
+                <div class="botaoMenor">
+                    <div class="cima1"></div>
+                    <div class="cima2"></div>
+                    <div class="cima3"></div>
+
+                    <div class="centro1"></div>
+                    <div class="centro2"></div>
+                    <div class="centro3"></div>
+
+                    <div class="baixo1"></div>
+                    <div class="baixo2"></div>
+                    <div class="baixo3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+
+            <div class="inicio" id="divAll">
+                <div class="logo">
+                    <img src="./img/logo_wazlaquiz.gif" alt="">
+                </div>
+            </div>
+
+            <div class="animacao" id="resultados">
+                <div class="resul">
+                    <img src="./img/wazlahappy.png" alt="">
+                    <h4>Pontos:  <span id="span" name="resultado"></span> / 15</h4>
+                    <h5>Em <span id="contRegreessiva"></span> segundos será reiniciado</h5>
+                </div>
+            </div>
+
+            <div id="question-container" class="hide">
+                <div id="question"></div>
+                <div id="answer-buttons" class="btn-grid"></div>
+            </div>
+            
+        </div>
+
+        <div class="rigth">
+            <div class="botoes">
+                <div class="botaoMenorRigth">
+                    <div class="cima1"></div>
+                    <div class="cima2"></div>
+                    <div class="cima3"></div>
+
+                    <div class="centro1"></div>
+                    <div class="centro2"></div>
+                    <div class="centro3"></div>
+
+                    <div class="baixo1"></div>
+                    <div class="baixo2"></div>
+                    <div class="baixo3"></div>
+                </div>
+
+                <div class="botaoMaiorDireito">
+                    <div class="controls">
+                        <button id="start-btn" class="start-btn btn" onclick="meuMenuToggle()">Start</button>
+                        <button id="next-btn" class="next-btn btn hide">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <audio src="./audio/acerto.mp3" id="somAcerto"></audio>
+    <audio src="./audio/erro.mp3" id="somErro"></audio>
+    <audio src="./audio/aplausos.mp3" id="aplausos"></audio>
+</body>
+
+<script src="app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</html>
