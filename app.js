@@ -252,3 +252,19 @@ const questions = [
 ]
 
 
+const form = document.querySelector('#form');
+const nomeInput = document.querySelector('#nome');
+const nomeOutput = document.querySelector('#nome-output');
+const btnNome = document.querySelector('#btn-nome');
+
+btnNome.addEventListener('click', (e) => {
+  e.preventDefault();
+  const nome = nomeInput.value;
+  nomeOutput.value = nome;
+  form.classList.add('started');
+});
+
+startButton.addEventListener('click', () => {
+  btnNome.click(); // chama a função do nome-input
+  startGame(); // chama a função do jogo
+});

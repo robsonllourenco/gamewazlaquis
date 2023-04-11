@@ -37,17 +37,24 @@
 
             <div class="inicio" id="divAll">
                 <div class="logo">
-                    <img src="./img/logo_wazlaquiz.gif" alt="">
+                  <img src="./img/logo_wazlaquiz.gif" alt="">
                 </div>
-            </div>
+                <div class="nome-input">
+                  <label for="nome">Insira seu nome:</label>
+                  <input type="text" id="nome" name="nome">
+                  <button id="btn-nome">Iniciar</button>
+                </div>
+              </div>
+              
 
-            <div class="animacao" id="resultados">
+              <div class="animacao" id="resultados">
                 <div class="resul">
-                    <img src="./img/wazlahappy.png" alt="">
-                    <h4>Pontos:  <span id="span" name="resultado"></span> / 15</h4>
-                    <h5>Em <span id="contRegreessiva"></span> segundos será reiniciado</h5>
+                  <img src="./img/wazlahappy.png" alt="">
+                  <h5>Parabéns <output id="nome-output" name="nome-output"></output> !</h5>
+                  <h4>Você acertou <span id="span" name="resultado"></span> de 15</h4>
+                  <h6>Em <span id="contRegreessiva"></span> segundos, o jogo será reiniciado.</h6>
                 </div>
-            </div>
+              </div>
 
             <div id="question-container" class="hide">
                 <div id="question"></div>

@@ -13,16 +13,21 @@
     50% { opacity: 1; }
     100% { opacity: 0; }
 }
-body{
-    background-color: rgb(58, 56, 56);
+body {
+    background-image: url(./img/fundoback.png);
+    background-size: cover;
+    background-position: center center;
 }
+
 h1{
     font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 
 h2{
     font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 
@@ -50,16 +55,25 @@ h2{
 h4{
     width: 100%;
     font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     color: #e9ec38;
-    margin-top: 100px;
+    margin-top: -90px;
 }
 h5{
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    opacity: 0.6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #e9ec38;
-    margin-top: 100px;
+    margin-top: 130px;
+}
+
+h6{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    margin-top: -130px;
 }
 
 .title{
@@ -90,23 +104,11 @@ h5{
     align-items: center;
 }
 .logo img {
-    margin-top: 150px;
-    width: 320px;
+    margin-top: 90px;
+    width: 230px;
     transform: translate3d(0, 0, 0); /* ativa aceleração de hardware para melhor desempenho */
-    animation: float 3s ease-in-out infinite;
     }
     
-    @keyframes float {
-    0% {
-    transform: translate3d(0, 0, 0);
-    }
-    50% {
-    transform: translate3d(0, -10px, 0);
-    }
-    100% {
-    transform: translate3d(0, 0, 0);
-    }
-    }
 .left{
     background-color: rgb(233, 236, 56);
     border-radius: 150px 10px 10px 150px;
@@ -183,6 +185,7 @@ h5{
 #question{
     margin-top: 100px;
     font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     align-items: center;
     color: white;
@@ -206,6 +209,7 @@ button{
     justify-content: center;
     grid-template-columns: 100%;
     font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1{
@@ -257,6 +261,7 @@ h1{
     width: 150px;
     height: 150px;
     font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #e9ec38;
   }
   
@@ -269,6 +274,56 @@ h1{
   .hide {
     display: none;
   }
+
+  .nome-input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .nome-input label {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+  }
+  
+  .nome-input input {
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: -170px;
+    width: 350px;
+    border-radius: 50px;
+    color: #000;
+}
+
+.nome-input input::placeholder {
+    font-size: 20px;
+    color: #000;
+}
+  
+  .nome-input button {
+    padding: 0px 0px;
+    font-size: 0px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #nome-output {
+    font-weight: bold;
+  }
+
+  
   *, *::before, *::after {
     box-sizing: border-box;
     font-family: Gotham Rounded;
@@ -279,6 +334,7 @@ h1{
     --hue-wrong: 0;
     --hue-correct: 145;
   }
+  
 
 @keyframes quicar {
     0%{
