@@ -111,7 +111,7 @@ h6{
     
 .left{
     background-color: rgb(233, 236, 56);
-    border-radius: 150px 10px 10px 150px;
+    border-radius: 150px 0px 0px 150px;
 }
 
 #divAll{
@@ -133,18 +133,18 @@ h6{
     align-items: center;
 }
 .botaoMaior{
-    background-color: rgb(66, 66, 248);
+    background-color: rgb(26, 26, 26);
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    box-shadow: 10px 10px 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
 }
 .botaoMaiorDireito{
-    background-color: rgb(66, 66, 248);
+    background-color: rgb(26, 26, 26);
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    box-shadow: 10px 10px 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
 }
 .botaoMenor{
     width: auto;
@@ -156,17 +156,17 @@ h6{
     align-items: center;
 }
 .cima2, .baixo2, .centro1, .centro3{
-    background-color: #4242f8;
+    background-color: rgb(26, 26, 26);
     border-radius: 100%;
     width: 50px;
     height: 50px;
-    box-shadow: 5px 7px 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
     justify-content: center;
 }
 
 .rigth{
     background-color: rgb(233, 236, 56);
-    border-radius: 10px 150px 150px 10px;
+    border-radius: 0px 150px 150px 0px;
 }
 .botaoMenorRigth{
     margin-top: 250px;
@@ -179,7 +179,7 @@ h6{
 
 .center{
     background-image:url(./img/fundo.png);
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 #question{
@@ -256,7 +256,7 @@ h1{
   
   .start-btn, .next-btn {
     animation: btn-pisca 0.9s infinite;
-    background-color: rgb(66, 66, 248);
+    background-color: rgb(26, 26, 26);
     border-radius: 50%;
     width: 150px;
     height: 150px;

@@ -21,11 +21,11 @@ h5{
 }
 
 .left{
-    border-radius: 50px 10px 10px 50px;
+    border-radius: 50px 0px 0px 50px;
 }
 
 .rigth{
-    border-radius: 10px 50px 50px 10px;
+    border-radius: 0px 50px 50px 0px;
 }
 
 #joystick{
@@ -43,7 +43,7 @@ h5{
     border-radius: 50%;
     width: 75px;
     height: 75px;
-    box-shadow: 5px 5px 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
     margin-left: 5px;
 }
 
@@ -51,7 +51,7 @@ h5{
     border-radius: 50%;
     width: 75px;
     height: 75px;
-    box-shadow: 5px 5px 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
     margin-left: 5px;
 }
 
@@ -76,7 +76,7 @@ h5{
 .cima2, .baixo2, .centro1, .centro3{
     width: 25px;
     height: 25px;
-    box-shadow: 5px 5px 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
 }
 
 .logo img{
